@@ -1,0 +1,53 @@
+{
+  "name": "commit-craft-cli",
+  "version": "1.0.0",
+  "description": "An interactive, zero-dependency Git workflow supercharger and Conventional Commits assistant with lightning-fast execution.",
+  "main": "src/index.js",
+  "bin": {
+    "commit-craft": "./bin/commit-craft.js",
+    "ccraft": "./bin/commit-craft.js"
+  },
+  "scripts": {
+    "start": "node ./bin/commit-craft.js",
+    "test": "node --test test/*.test.js",
+    "commit": "node ./bin/commit-craft.js commit",
+    "changelog": "node ./bin/commit-craft.js changelog",
+    "cleanup": "node ./bin/commit-craft.js cleanup",
+    "help": "node ./bin/commit-craft.js --help"
+  },
+  "keywords": [
+    "git",
+    "cli",
+    "conventional-commits",
+    "commit",
+    "changelog",
+    "changelog-generator",
+    "git-workflow",
+    "branch-cleanup",
+    "zero-dependencies",
+    "developer-tools",
+    "terminal",
+    "interactive-cli",
+    "commit-craft",
+    "productivity"
+  ],
+  "author": "CommitCraft Contributors",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlo/commit-craft-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/carlo/commit-craft-cli/issues"
+  },
+  "homepage": "https://github.com/carlo/commit-craft-cli#readme",
+  "files": [
+    "bin/",
+    "src/",
+    "LICENSE",
+    "README.md"
+  ]
+}
