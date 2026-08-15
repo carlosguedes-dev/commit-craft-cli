@@ -38,12 +38,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/carlo/commit-craft-cli.git"
+    "url": "git+https://github.com/carlosguedes-dev/commit-craft-cli.git"
   },
   "bugs": {
-    "url": "https://github.com/carlo/commit-craft-cli/issues"
+    "url": "https://github.com/carlosguedes-dev/commit-craft-cli/issues"
   },
-  "homepage": "https://github.com/carlo/commit-craft-cli#readme",
+  "homepage": "https://github.com/carlosguedes-dev/commit-craft-cli#readme",
   "files": [
     "bin/",
     "src/",
