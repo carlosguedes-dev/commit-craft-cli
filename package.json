@@ -17,19 +17,12 @@
   },
   "keywords": [
     "git",
-    "cli",
-    "conventional-commits",
     "commit",
+    "conventional-commits",
     "changelog",
-    "changelog-generator",
-    "git-workflow",
-    "branch-cleanup",
-    "zero-dependencies",
-    "developer-tools",
-    "terminal",
-    "interactive-cli",
-    "commit-craft",
-    "productivity"
+    "cli",
+    "workflow",
+    "zero-dependency"
   ],
   "author": "CommitCraft Contributors",
   "license": "MIT",
