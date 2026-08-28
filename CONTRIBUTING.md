@@ -1,8 +1,8 @@
-# Contributing to CommitCraft CLI ⚡️
+# Contributing to CommitCraft CLI 
 
 First off, thank you for considering contributing to **CommitCraft CLI**! It's people like you that make open-source such a fantastic community to learn, inspire, and create.
 
-## 🏆 Our Golden Rule: Zero External Dependencies!
+##  Our Golden Rule: Zero External Dependencies!
 
 The core philosophy of **CommitCraft CLI** is lightning-fast execution and total immunity to NPM supply chain issues through **zero heavy external dependencies**. 
 
@@ -10,7 +10,7 @@ When adding new features or bug fixes, **please do not add external npm packages
 
 ---
 
-## 🛠️ Local Development Setup
+##  Local Development Setup
 
 1. **Fork & Clone the repository:**
    ```bash
@@ -36,7 +36,7 @@ When adding new features or bug fixes, **please do not add external npm packages
 
 ---
 
-## 🧙‍♂️ Making Commits
+##  Making Commits
 
 We practice what we preach! When submitting pull requests to this repository, please format your commit messages using **Conventional Commits**.
 
@@ -61,11 +61,11 @@ ccraft commit
 
 ---
 
-## 📋 Pull Request Process
+##  Pull Request Process
 
 1. Ensure your branch is updated with the latest `main` branch.
 2. Test your changes across terminal environments if possible (standard terminals, Windows PowerShell/CMD, VS Code integrated terminal).
 3. Ensure that your changes do not introduce any new npm dependencies.
 4. Open a PR with a clear description of the problem solved or feature added. Include screenshots or terminal output if modifying UI elements!
 
-Thank you for helping us make Git workflows faster and more delightful for developers around the world! 🚀
+Thank you for helping us make Git workflows faster and more delightful for developers around the world! 

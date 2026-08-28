@@ -4,10 +4,10 @@
 const colors = require('./colors.js');
 
 const symbols = {
-  tick: colors.green('✔'),
-  cross: colors.red('✖'),
-  info: colors.cyan('ℹ'),
-  warn: colors.yellow('⚠'),
+  tick: colors.green(''),
+  cross: colors.red(''),
+  info: colors.cyan(''),
+  warn: colors.yellow(''),
   star: colors.brightYellow('★'),
   arrow: colors.cyan('➜'),
   dot: colors.dim('•'),
@@ -43,7 +43,6 @@ const box = (content, { title = '', borderColor = 'cyan', padding = 1 } = {}) =>
   const lines = content.split('\n');
   const termWidth = process.stdout.columns || 80;
   
-  // Calculate max line length (stripping ANSI codes for length calculation)
   const stripAnsi = (str) => str.replace(/\x1b\[[0-9;]*m/g, '');
   let maxLen = Math.max(...lines.map(l => stripAnsi(l).length));
   if (title) {

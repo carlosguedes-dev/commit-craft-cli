@@ -8,15 +8,15 @@ const Prompt = require('../utils/prompt.js');
 const { colors, symbols, box, badge, Spinner } = require('../utils/ui.js');
 
 const TYPE_GROUPS = [
-  { title: '💥 Breaking Changes', types: ['breaking'], color: 'red' },
-  { title: '🚀 Features', types: ['feat'], color: 'green' },
-  { title: '🐛 Bug Fixes', types: ['fix'], color: 'yellow' },
-  { title: '⚡ Performance Improvements', types: ['perf'], color: 'cyan' },
-  { title: '♻️ Code Refactoring', types: ['refactor'], color: 'magenta' },
-  { title: '📚 Documentation', types: ['docs'], color: 'blue' },
-  { title: '🧪 Tests & Quality', types: ['test'], color: 'brightCyan' },
-  { title: '🛠️ Build & CI/CD', types: ['build', 'ci'], color: 'brightYellow' },
-  { title: '🧹 Chores & Maintenance', types: ['chore', 'style', 'revert', 'other'], color: 'dim' }
+  { title: ' Breaking Changes', types: ['breaking'], color: 'red' },
+  { title: ' Features', types: ['feat'], color: 'green' },
+  { title: ' Bug Fixes', types: ['fix'], color: 'yellow' },
+  { title: ' Performance Improvements', types: ['perf'], color: 'cyan' },
+  { title: ' Code Refactoring', types: ['refactor'], color: 'magenta' },
+  { title: ' Documentation', types: ['docs'], color: 'blue' },
+  { title: ' Tests & Quality', types: ['test'], color: 'brightCyan' },
+  { title: ' Build & CI/CD', types: ['build', 'ci'], color: 'brightYellow' },
+  { title: ' Chores & Maintenance', types: ['chore', 'style', 'revert', 'other'], color: 'dim' }
 ];
 
 async function runChangelogCommand(args = {}) {
@@ -79,17 +79,16 @@ async function runChangelogCommand(args = {}) {
   }
   spinner.succeed(`Analyzed ${commits.length} commit(s) in range ${colors.bold(fromRef || 'Initial')}..${colors.bold(toRef)}!`);
 
-  // Group Commits
   const grouped = {};
   TYPE_GROUPS.forEach(g => { grouped[g.title] = []; });
 
   commits.forEach(commit => {
     if (commit.isBreaking) {
-      grouped['💥 Breaking Changes'].push(commit);
+      grouped[' Breaking Changes'].push(commit);
     }
     const targetGroup = TYPE_GROUPS.find(g => g.types.includes(commit.type)) || TYPE_GROUPS[TYPE_GROUPS.length - 1];
     // Don't duplicate in feature/fix if already in breaking, or do include for completeness
-    if (!commit.isBreaking || targetGroup.title !== '💥 Breaking Changes') {
+    if (!commit.isBreaking || targetGroup.title !== ' Breaking Changes') {
       grouped[targetGroup.title].push(commit);
     }
   });

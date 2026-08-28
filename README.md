@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚡️ ★ CommitCraft CLI ★ ⚡️
+#  ★ CommitCraft CLI ★ 
 
 **Um assistente interativo de linha de comando para otimização do fluxo de trabalho Git e padronização com Conventional Commits, ultrarrápido e construído com zero dependências externas.**
 
@@ -9,9 +9,9 @@
 [![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 [![Zero Dependências](https://img.shields.io/badge/dependências-ZERO_%E2%9A%A1%EF%B8%8F-brightgreen?style=for-the-badge)](https://github.com/carlosguedes-dev/commit-craft-cli)
-[![Feito com Amor](https://img.shields.io/badge/Feito_com-MUITO_AMOR_❤️-ff0055?style=for-the-badge)](https://github.com/carlosguedes-dev)
+[![Feito com Amor](https://img.shields.io/badge/Feito_com-MUITO_AMOR_-ff0055?style=for-the-badge)](https://github.com/carlosguedes-dev)
 
-🔗 **[Acessar o Repositório no GitHub](https://github.com/carlosguedes-dev/commit-craft-cli)**
+ **[Acessar o Repositório no GitHub](https://github.com/carlosguedes-dev/commit-craft-cli)**
 
 ---
 
@@ -23,7 +23,7 @@
 
 ---
 
-## 📖 Sobre o Projeto
+##  Sobre o Projeto
 
 O **CommitCraft CLI** é uma ferramenta de terminal de alto nível concebida para revolucionar a forma como desenvolvedores e equipes gerenciam seus fluxos de trabalho no Git. No desenvolvimento moderno, manter um histórico de commits limpo, semântico e rastreável é um desafio constante. Muitas interfaces de linha de comando tentam resolver esse problema, mas acabam sobrecarregando o ambiente com dezenas de bibliotecas de terceiros pesadas, aumentando o tempo de inicialização e criando riscos desnecessários de segurança na cadeia de suprimentos do NPM.
 
@@ -33,19 +33,19 @@ Muito mais do que um simples formatador de commits, o projeto atua como um assis
 
 ---
 
-## ✨ Principais Funcionalidades
+##  Principais Funcionalidades
 
-- 🧙‍♂️ **Assistente Interativo de Commits**: Elimine a necessidade de memorizar a sintaxe complexa dos *Conventional Commits*. O assistente guia o usuário na escolha do tipo de commit (`feat`, `fix`, `docs`, `refactor`, etc.), escopo da alteração, descrição curta, corpo detalhado e referência a *issues* ou tarefas de fechamento.
-- ⚡ **Desempenho Instantâneo (<30ms)**: Arquitetura leve e altamente otimizada sem bibliotecas pesadas de terminal, abrindo mais rápido do que um piscar de olhos e consumindo recursos mínimos de processamento e memória.
-- 🛡️ **Zero Dependências Externas**: Código puramente construído sobre os pilares nativos do Node.js. Total imunidade a vulnerabilidades em pacotes transitivos do NPM e máxima facilidade de auditoria.
-- 📜 **Gerador Automático de Changelogs**: Varre o histórico do repositório entre tags de release ou datas específicas, extrai os commits semânticos e exporta um arquivo `CHANGELOG.md` estruturado com perfeição e agrupado por categoria de impacto.
-- 🧹 **Limpeza Interativa de Branches (`cleanup`)**: Identifica inteligentemente quais branches locais já foram mescladas (*merged*) na branch principal (`main` ou `master`) e exibe uma lista interativa permitindo marcar e excluir múltiplas ramificações obsoletas de uma só vez.
-- 🎨 **Interface Terminal UI Premium**: Exibição de caixas delimitadoras personalizadas em Unicode, indicadores visuais de progresso (*spinners*) interativos e formatação profissional nativa com suporte a cores ANSI 24-bit TrueColor.
-- 🤖 **Integração Inteligente com Git Staging**: Verifica o status da área de *staging* do Git antes da execução e oferece opções interativas para adicionar arquivos automaticamente ou continuar com a seleção atual.
+-  **Assistente Interativo de Commits**: Elimine a necessidade de memorizar a sintaxe complexa dos *Conventional Commits*. O assistente guia o usuário na escolha do tipo de commit (`feat`, `fix`, `docs`, `refactor`, etc.), escopo da alteração, descrição curta, corpo detalhado e referência a *issues* ou tarefas de fechamento.
+-  **Desempenho Instantâneo (<30ms)**: Arquitetura leve e altamente otimizada sem bibliotecas pesadas de terminal, abrindo mais rápido do que um piscar de olhos e consumindo recursos mínimos de processamento e memória.
+-  **Zero Dependências Externas**: Código puramente construído sobre os pilares nativos do Node.js. Total imunidade a vulnerabilidades em pacotes transitivos do NPM e máxima facilidade de auditoria.
+-  **Gerador Automático de Changelogs**: Varre o histórico do repositório entre tags de release ou datas específicas, extrai os commits semânticos e exporta um arquivo `CHANGELOG.md` estruturado com perfeição e agrupado por categoria de impacto.
+-  **Limpeza Interativa de Branches (`cleanup`)**: Identifica inteligentemente quais branches locais já foram mescladas (*merged*) na branch principal (`main` ou `master`) e exibe uma lista interativa permitindo marcar e excluir múltiplas ramificações obsoletas de uma só vez.
+-  **Interface Terminal UI Premium**: Exibição de caixas delimitadoras personalizadas em Unicode, indicadores visuais de progresso (*spinners*) interativos e formatação profissional nativa com suporte a cores ANSI 24-bit TrueColor.
+-  **Integração Inteligente com Git Staging**: Verifica o status da área de *staging* do Git antes da execução e oferece opções interativas para adicionar arquivos automaticamente ou continuar com a seleção atual.
 
 ---
 
-## 💻 Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 O **CommitCraft CLI** é um exemplo exemplar de engenharia de software eficiente, utilizando o melhor do ecossistema moderno sem recorrer a pacotes externos desnecessários:
 
@@ -57,7 +57,7 @@ O **CommitCraft CLI** é um exemplo exemplar de engenharia de software eficiente
 
 ---
 
-## 📁 Estrutura de Arquivos
+##  Estrutura de Arquivos
 
 ```text
 commit-craft-cli/
@@ -77,7 +77,7 @@ commit-craft-cli/
 
 ---
 
-## 🚀 Como Instalar e Executar o Projeto
+##  Como Instalar e Executar o Projeto
 
 Você pode utilizar o **CommitCraft CLI** em qualquer repositório local instalando de forma global ou executando instantaneamente sob demanda.
 
@@ -124,7 +124,7 @@ ccraft cleanup --force
 
 ---
 
-## 🤝 Como Contribuir
+##  Como Contribuir
 
 O **CommitCraft CLI** é um projeto de software livre e sua comunidade é o que o torna tão incrível! Se você tem ideias para novas funcionalidades, melhorias no design do terminal ou correções de bugs, adoraríamos receber sua contribuição.
 
@@ -132,13 +132,13 @@ Por favor, consulte o arquivo [CONTRIBUTING.md](CONTRIBUTING.md) para entender n
 
 ---
 
-## 📄 Licença
+##  Licença
 
 Este projeto está licenciado sob os termos da licença **MIT**. Para mais detalhes sobre os direitos e permissões de uso, consulte o arquivo [LICENSE](LICENSE).
 
 ---
 
 <div align="center">
-  <p>Feito com todo o carinho e dedicação por <b>Carlos Guedes</b> ❤️</p>
-  <p><b>Transformando código em excelência e inovação! ✨</b></p>
+  <p>Feito com todo o carinho e dedicação por <b>Carlos Guedes</b> </p>
+  <p><b>Transformando código em excelência e inovação! </b></p>
 </div>

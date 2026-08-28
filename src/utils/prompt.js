@@ -38,7 +38,6 @@ class Prompt {
 
       const render = () => {
         if (!firstRender) {
-          // Clear previous render lines (total choices + 1 line for prompt + optional description line)
           const linesToClear = total + 2;
           for (let i = 0; i < linesToClear; i++) {
             process.stdout.write('\x1b[1A\x1b[2K');
@@ -58,7 +57,7 @@ class Prompt {
         });
         
         const currentDesc = choices[selected].description || 'Press ↑/↓ to navigate, Enter to select.';
-        process.stdout.write(`  ${colors.dim('ℹ ' + currentDesc)}\n`);
+        process.stdout.write(`  ${colors.dim(' ' + currentDesc)}\n`);
       };
 
       process.stdin.setRawMode(true);
@@ -68,7 +67,6 @@ class Prompt {
       render();
 
       const onData = (key) => {
-        // Ctrl+C
         if (key === '\u0003') {
           process.stdout.write('\x1b[?25h\n\x1b[33m✿ Cancelled.\x1b[0m\n');
           process.exit(0);
@@ -145,7 +143,7 @@ class Prompt {
           process.stdout.write(`  ${arrow} ${checkbox} ${nameStr}${descStr}\n`);
         });
 
-        process.stdout.write(`  ${colors.dim('ℹ Space to toggle, ↑/↓ to navigate, ' + colors.bold('Enter') + ' to confirm.')}\n`);
+        process.stdout.write(`  ${colors.dim(' Space to toggle, ↑/↓ to navigate, ' + colors.bold('Enter') + ' to confirm.')}\n`);
       };
 
       process.stdin.setRawMode(true);
@@ -186,7 +184,6 @@ class Prompt {
           cursor = (cursor + 1) % total;
           render();
         }
-        // Select All (a)
         if (key === 'a' || key === 'A') {
           const allChecked = items.every(i => i.checked);
           items.forEach(i => i.checked = !allChecked);

@@ -126,13 +126,11 @@ class GitUtils {
   static getCommits(fromRef = null, toRef = 'HEAD') {
     const range = fromRef ? `${fromRef}..${toRef}` : toRef;
     const delimiter = '---COMMIT_DELIMITER_CCRAFT---';
-    // Format: Hash | Author | Date | Subject | Body (separated by delimiter)
     const formatStr = `%H|%an|%ad|%s|%b${delimiter}`;
     let raw;
     try {
       raw = this.exec(['log', range, `--pretty=format:${formatStr}`, '--date=short']);
     } catch (e) {
-      // If range fails (e.g., empty repo or bad tag), return empty array
       return [];
     }
 
@@ -155,7 +153,6 @@ class GitUtils {
    * Parse commit subject and body into Conventional Commit components.
    */
   static parseConventionalCommit({ hash, author, date, subject, body }) {
-    // Regex for Conventional Commits: type(scope)!: description
     const regex = /^([a-zA-Z]+)(?:\(([^)]+)\))?(!)?:\s*(.+)$/;
     const match = subject.match(regex);
 
@@ -176,7 +173,6 @@ class GitUtils {
       isBreaking = true;
     }
 
-    // Extract issue references (e.g., #123, closes #456)
     const issueRegex = /(?:#|issues?\/|cr\/)(\d+)/gi;
     const issues = [];
     let issueMatch;

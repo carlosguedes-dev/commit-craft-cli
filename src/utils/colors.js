@@ -11,7 +11,6 @@ const format = (open, close, text) => {
 };
 
 const colors = {
-  // Styles
   reset: (text) => format(0, 0, text),
   bold: (text) => format(1, 22, text),
   dim: (text) => format(2, 22, text),
@@ -39,7 +38,6 @@ const colors = {
   brightCyan: (text) => format(96, 39, text),
   brightWhite: (text) => format(97, 39, text),
 
-  // Background Colors
   bgBlack: (text) => format(40, 49, text),
   bgRed: (text) => format(41, 49, text),
   bgGreen: (text) => format(42, 49, text),
@@ -49,7 +47,6 @@ const colors = {
   bgCyan: (text) => format(46, 49, text),
   bgWhite: (text) => format(47, 49, text),
 
-  // Hex RGB Color support (24-bit TrueColor fallback to standard)
   hex: (hexCode) => (text) => {
     if (!isTTY) return text;
     let hex = hexCode.replace(/^#/, '');

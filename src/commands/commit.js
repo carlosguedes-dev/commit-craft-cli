@@ -6,17 +6,17 @@ const Prompt = require('../utils/prompt.js');
 const { colors, symbols, box, badge, Spinner } = require('../utils/ui.js');
 
 const COMMIT_TYPES = [
-  { name: 'feat', value: 'feat', badge: '✨', description: 'A new feature for the user or API' },
-  { name: 'fix', value: 'fix', badge: '🐛', description: 'A bug fix for the user or API' },
-  { name: 'docs', value: 'docs', badge: '📚', description: 'Documentation only changes (README, JSDoc)' },
-  { name: 'style', value: 'style', badge: '💎', description: 'Code style, formatting, linting (no logic change)' },
-  { name: 'refactor', value: 'refactor', badge: '♻️', description: 'Code restructuring without changing external behavior' },
-  { name: 'perf', value: 'perf', badge: '⚡', description: 'A code change that improves performance' },
-  { name: 'test', value: 'test', badge: '🧪', description: 'Adding missing tests or correcting existing tests' },
-  { name: 'build', value: 'build', badge: '🛠️', description: 'Changes affecting build system or external dependencies' },
-  { name: 'ci', value: 'ci', badge: '⚙️', description: 'Changes to CI/CD configuration files and scripts' },
-  { name: 'chore', value: 'chore', badge: '🧹', description: 'Other maintenance tasks, versioning, release chores' },
-  { name: 'revert', value: 'revert', badge: '⏪', description: 'Reverts a previous git commit' }
+  { name: 'feat', value: 'feat', badge: '', description: 'A new feature for the user or API' },
+  { name: 'fix', value: 'fix', badge: '', description: 'A bug fix for the user or API' },
+  { name: 'docs', value: 'docs', badge: '', description: 'Documentation only changes (README, JSDoc)' },
+  { name: 'style', value: 'style', badge: '', description: 'Code style, formatting, linting (no logic change)' },
+  { name: 'refactor', value: 'refactor', badge: '', description: 'Code restructuring without changing external behavior' },
+  { name: 'perf', value: 'perf', badge: '', description: 'A code change that improves performance' },
+  { name: 'test', value: 'test', badge: '', description: 'Adding missing tests or correcting existing tests' },
+  { name: 'build', value: 'build', badge: '', description: 'Changes affecting build system or external dependencies' },
+  { name: 'ci', value: 'ci', badge: '', description: 'Changes to CI/CD configuration files and scripts' },
+  { name: 'chore', value: 'chore', badge: '', description: 'Other maintenance tasks, versioning, release chores' },
+  { name: 'revert', value: 'revert', badge: '', description: 'Reverts a previous git commit' }
 ];
 
 async function runCommitCommand() {
